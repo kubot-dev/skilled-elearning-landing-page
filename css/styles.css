@@ -1,0 +1,55 @@
+/*styles.css*/
+
+:root {
+  --color-background: #ffffff;
+  --color-text-plain: #83869a;
+  --color-text-accent: #f74780;
+  --color-text-accent-hover: #ffa7c3;
+  --color-text-heading: #13183f;
+  --color-button-topnav-idle: #13183f;
+  --color-button-topnav-hover: #666ca3;
+  --color-button-gradient-orange: linear-gradient(#ff6f48, #f02aa6);
+  --color-button-gradient-blue: linear-gradient(#4851ff, #f02aa6);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text-plain);
+}
+
+.wrapper {
+  margin-inline: 1rem;
+  margin-top: 1rem;
+}
+
+.navigationTop__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.navigationTop__button {
+  display: flex;
+  width: clamp(8.75rem, calc(7.89rem + 3.66vw), 10.5rem);
+  height: clamp(3rem, calc(2.75rem + 1.05vw), 3.5rem);
+  background-color: var(--color-button-topnav-idle);
+  color: var(--color-background);
+  border-radius: clamp(1.5rem, calc(1.38rem + 0.52vw), 1.75rem);
+  justify-content: center;
+  align-items: center;
+
+  font-size: clamp(1rem, calc(0.94rem + 0.26vw), 1.13rem);
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 2.375rem;
+}
+
+.hero__heading {
+  font-size: 2.5rem;
+  color: var(--color-text-heading);
+  font-weight: 800;
+}
